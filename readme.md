@@ -20,6 +20,12 @@
 gcc filename.c -o filename
 
 ./filename
+
+   or
+
+gcc filename.c
+
+./a.exe
 ```
 ---
 ## ✅**AUTHOR**
