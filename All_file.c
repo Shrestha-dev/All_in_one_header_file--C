@@ -105,15 +105,32 @@ static char space (char x)     // to chech whitespace
     return (x == ' ');
 }
 
-/*static char lowc_upc (char x)     // to chnage from lower to uppercase
+static char lowc_upc (char x)     // to chnage from lower to uppercase
 {
-    return ( );
+    char ch;
+    if('a' < x < 'z')
+    {
+        ch = x - 32;
+    }
+    return ch;
 }
     
 static char upc_lowc (char x)     // to chnage from uppercase to uppercase
 {
-    return ( );
-}*/
+    char ch;
+    if('A' < x < 'Z')
+    {
+        ch = x + 32;
+    }
+    return ch;
+}
+
+// self constructed built in libraries of stdlib.h
+
+static int absolute (int a)           // to find absolute value
+{
+    return -a;
+}
 
 
 
