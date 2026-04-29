@@ -6,7 +6,7 @@ Here you will get libraries of string.h , math.h and ctype.h
 
 //self constructed built in libraries of string.h
 
-static int stlen(char ch[])
+static int stlen(char ch[])       // to get length of string
 {
     int i=0;
     while(!(ch[i] == '\0'))
@@ -16,7 +16,7 @@ static int stlen(char ch[])
     return i;
 }
 
-static int stcomp (char x[],  char y[])
+static int stcomp (char x[],  char y[])        // to compare two strings
 {
     int i = 0;
     while(!(x[i] == '\0') && !(y[i] == '\0'))
@@ -29,6 +29,7 @@ static int stcomp (char x[],  char y[])
     }
     return x[i] -y[i];
 }
+
 static void stcat (char a[], char b[])       // to concatinate two string
 {
     int i = 0,j = 0;
@@ -43,6 +44,31 @@ static void stcat (char a[], char b[])       // to concatinate two string
         j++;
     }
     a[i] = '\0';
+}
+
+static void stcopy (char b[], char a[])         // to copy one string to another
+{
+    int i = 0;
+    while(a[i] != '\0')
+    {
+        b[i] = a[i];
+        i++;
+    }
+    b[i] ='\0';
+}
+
+static stchr (char a[], char x)              // to check character availability in the users string 
+{
+    int i = 0;
+    while(a[i] != '\0')
+    {
+        if(a[i] == x)
+        {
+            return 1;
+        }
+        i++;
+    }
+    return 0;
 }
 
 
