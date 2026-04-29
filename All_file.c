@@ -29,6 +29,21 @@ static int stcomp (char x[],  char y[])
     }
     return x[i] -y[i];
 }
+static void stcat (char a[], char b[])       // to concatinate two string
+{
+    int i = 0,j = 0;
+    while((a[i] != '\0'))
+    {
+        i++;
+    }
+    while((b[j] != '\0'))
+    {
+        a[i] = b[j];
+        i++;
+        j++;
+    }
+    a[i] = '\0';
+}
 
 
 
