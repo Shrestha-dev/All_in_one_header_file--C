@@ -132,6 +132,22 @@ static int absolute (int a)           // to find absolute value
     return -a;
 }
 
+// self constructed built in libraries of math.h
+
+static int power (int x, int y)              // for power function
+{
+    int po = 1;
+    for (int i=1 ; i<=y; i++)
+    {
+        po *= x;
+    }
+    return po;
+}
+
+/*static float sqr (int x)         //for square root function
+{
+    
+}*/
 
 
 
